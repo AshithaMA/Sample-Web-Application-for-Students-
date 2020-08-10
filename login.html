@@ -1,0 +1,69 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	
+<meta charset="utf-8">
+<title>First AngularJS App</title>
+	<script src="angular.min.js"></script>
+	<script src="loginjs.js"></script>
+	<link href="bootstrap.css" rel="stylesheet"/>
+	<link href="bootstrap-theme.css" rel="stylesheet"/>
+	<link href="logincss.css" rel="stylesheet"/>
+	</head>
+<style> 
+
+	Body {  
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+button {   
+       background-color: #4CAF50;   
+       width: 100%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ 
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 0.1px solid ;   
+        box-sizing: border-box:
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 5px 10px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding:90px;   
+        background-color: lightblue;  
+    }   
+</style>   
+</head> 
+
+<body>  
+	    <center><style="max-width: 300px;">
+		<h3 align="left"><a href="index.html">Home</a></h3>
+		<h2>Login Page:</h2></center>   
+    <form>  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit" onclick="window.location.href='index.html';" >Login</button>   
+            <input type="checkbox"> Remember me   
+            <button type="button" onclick="window.location.href='index.html';"  class="cancelbtn"> Cancel</button>   
+            Forgot <a href="https://www.website.com/forgot-password/"> password? </a>   
+        </div>   
+    </form>     
+</body>     
+</html>  

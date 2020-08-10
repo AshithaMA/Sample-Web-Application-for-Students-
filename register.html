@@ -1,0 +1,164 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+	
+	<meta charset="utf-8">
+<title>First AngularJS App</title>
+	<link rel="stylesheet"  href="styles.css" />
+	<script src="angular.min.js"></script>
+	<link href="bootstrap.css" rel="stylesheet"/>
+	<link href="bootstrap-theme.css" rel="stylesheet"/>
+	
+	
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: lightcyan;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: purple;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form> 
+	
+	
+	<form role="form" style="max-width: 300px;">
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<h2 align="center">Do you want to view</h2> <h4 align="center"><a href="index.html">Home</a>     
+	
+	<a href="login.html">Login</a></h4>	
+	
+  <div class="container">  
+  <center>  <h1>Applicant Registaration Form</h1> </center>  
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Middlename: </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+<div>  
+<label>   
+Course :  
+</label>   
+  
+<select>  
+<option value="Course">Course</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>  
+<option value="M.Tech">M.Tech</option>  
+</select>  
+</div>  
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+  
+  
+<label for="phone">Phone:</label>
+				
+			<td><select>
+				<option>+91</option>
+				<option>+92</option>
+				<option>+93</option>
+				<option>+94</option>
+				<option>+95</option>
+				<option>+96</option>
+				<option>+97</option>
+				<div class="form-group"></div>
+				</select><input type="text" placeholder="97********">
+	  
+	  
+	  <label for="country">Country:</label>
+	  <select class="form-control" ng-model="country">
+			<option value="Afghanistan" ng-selected="country=='Afghanistan'">Afghanistan</option>
+			<option value="Algeria" ng-selected="country=='Algeria'">Algeria</option>
+			<option value="Australia" ng-selected="country=='Australia'">Australia</option>
+			<option value="Bahrain" ng-selected="country=='Bahrain'">Bahrain</option>
+			<option value="Brazil" ng-selected="country=='Brazil'">Brazil</option>
+			<option value="Canada" ng-selected="country=='Canada'">Canada</option>
+			<option value="Denmark" ng-selected="country=='Denmark'">Denmark</option>
+			<option value="Egypt" ng-selected="country=='Egypt'">Egypt</option>
+			<option value="Finland" ng-selected="country=='Finland'">Finland</option>
+			<option value="France" ng-selected="country=='France'">France</option>
+			<option value="Germany" ng-selected="country=='Germany'">Germany</option>
+			<option value="Greece" ng-selected="country=='Greece'">Greece</option>
+			<option value="Hungary" ng-selected="country=='Hungary'">Hungary</option>
+			<option value="India" ng-selected="country=='India'">India</option>
+			<option value="Myanmar" ng-selected="country=='Myanmar'">Myanmar</option>
+			<option value="Nepal" ng-selected="country=='Nepal'">Nepal</option>
+			<option value="Pakistan" ng-selected="country=='Pakistan'">Pakistan</option>
+			<option value="South Africa" ng-selected="country=='South Africa'">South Africa</option>
+			<option value="United States of America" ng-selected="country=='United States of America'">United States of America</option>
+			<option value="Zimbabwe" ng-selected="country=='Zimbabwe'">Zimbabwe</option>
+		</select>
+		
+	  
+Current Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+				<label> Username: </label>    
+<input type="text" name="Username" placeholder="Username" size="15"required />   
+<div> 
+				
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+    
+	<button  type="submit" onclick="window.location.href='login.html';" class="registerbtn">Register</button>
+	
+</form>  
+					<p align="center">Do you want to view <a href="http://14.139.185.150/college/downloads/Student_Reg_usrmanual.pdf">details</a>?</p>
+
+</body>  
+</html>  
